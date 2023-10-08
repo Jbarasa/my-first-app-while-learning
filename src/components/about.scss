@@ -1,0 +1,41 @@
+.about {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    .container {
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 50px;
+            letter-spacing: 3px;
+            word-spacing: 10px;
+            color: #333;
+            span {
+                color: rgba(128, 0, 128, 0.884);
+            }
+        }
+        .flex {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            img {
+                max-width: 40%;
+                border-radius: 20px;
+            }
+            h4 {
+                text-transform: capitalize;
+                letter-spacing: 3px;
+                font-weight: 600;
+                font-size: 25px;
+                margin: 0;
+                color: #333333;
+            }
+            p {
+                max-width: 480px;
+            }
+        }
+    }
+}

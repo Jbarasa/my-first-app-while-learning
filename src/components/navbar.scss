@@ -1,0 +1,74 @@
+.navbar {
+    padding: 30px 50px;
+    display: flex;
+    background-color: white;
+    color: #242424fd;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px #333333bb;
+    .logo {
+        font-size: 30px;
+        display: flex;
+        gap: 10px;
+    }
+    .tembea,
+    .kenya,
+    .safaris {
+        font-weight: 800;
+        letter-spacing: 3px;
+    }
+    .tembea {
+        animation: bounce_tembea 5s infinite;
+    }
+    .kenya {
+        color: rgb(1, 129, 1);
+        animation: bounce_kenya 5s infinite;
+    }
+    .safaris {
+        color: rgb(129, 35, 35);
+        animation: bounce_tembea 5s infinite;
+    }
+    @keyframes bounce_tembea {
+        0%,
+        40%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+        20% {
+            transform: translateY(15px);
+        }
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+    @keyframes bounce_kenya {
+        0%,
+        40%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+        20% {
+            transform: translateY(-15px);
+        }
+        60% {
+            transform: translateY(15px);
+        }
+    }
+    .nav-center {
+        display: flex;
+        gap: 20px;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        a {
+            color: #242424cc;
+            text-decoration: none;
+            &:hover {
+                color: rgb(143, 28, 143);
+            }
+        }
+    }
+}
